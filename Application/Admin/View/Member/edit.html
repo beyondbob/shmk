@@ -1,0 +1,101 @@
+<extend name="Public/base" />
+
+<block name="body">
+    <div class="main-title">
+        <h2>会员详情</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        <table class="item-details">
+            <tbody>
+                <tr class="form-item">
+                    <td class="row-left">真实姓名</td>
+                    <td class="row-right">
+                        {$model.name}
+                    </td>
+                </tr>
+                <tr class="form-item">
+                    <td class="row-left">头像</td>
+                    <td class="row-right">
+                        <img width="50px" src='{$model.avatar}'/>
+                    </td>
+                </tr>
+                <tr class="form-item">
+                    <td class="row-left">昵称</td>
+                    <td class="row-right">
+                        {$model.nick}
+                    </td>
+                </tr>
+                <tr class="form-item">
+                    <td class="row-left">手机</td>
+                    <td class="row-right">
+                        {$model.tel}
+                    </td>
+                </tr>
+                <tr class="form-item">
+                    <td class="row-left">开户银行</td>
+                    <td class="row-right">
+                        {$model.bank}
+                    </td>
+                </tr>
+                <tr class="form-item">
+                    <td class="row-left">银行卡号</td>
+                    <td class="row-right">
+                        {$model.cardnum}
+                    </td>
+                </tr>
+                <tr class="form-item">
+                    <td class="row-left">上级</td>
+                    <td class="row-right">
+                        <img width="50px" src='{$model.savatar}' disabled="disabled" />          
+                        {$model.sname}
+                    </td>
+                </tr>
+                <tr class="form-item">
+                    <td class="row-left">账号状态</td>
+                    <td class="row-right">
+                       <if condition="$model.status eq 1">
+                            启用
+                        <else />
+                            停用
+                        </if>
+                    </td>
+                </tr>
+                <tr class="form-item">
+                    <td class="row-left">注册时间</td>
+                    <td class="row-right">
+                       {$model.create_time}
+                    </td>
+                </tr>
+                <tr class="form-item">
+                    <td class="row-left">最后登录时间</td>
+                    <td class="row-right">
+                       {$model.lastlogin_time}
+                    </td>
+                </tr>
+                <tr class="form-item">
+                    <td class="row-left">状态</td>
+                    <td class="row-right">
+                       <if condition="$model.status eq 1">
+                           启用
+                        <else />
+                           停用
+                        </if>
+                    </td>
+                </tr>
+                <tr class="form-item">
+                    <td class="row-left"></td>
+                    <td class="row-right">
+                       <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav('{:U('Member/index')}');
+    </script>
+</block>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{$meta_title}|市民卡管理平台</title>
+    <!-- <link href="__ROOT__/Public/favicon.ico" type="image/x-icon" rel="shortcut icon"> -->
+    <link rel="stylesheet" type="text/css" href="__CSS__/base.css" media="all">
+    <link rel="stylesheet" type="text/css" href="__CSS__/common.css" media="all">
+    <link rel="stylesheet" type="text/css" href="__CSS__/module.css">
+   <present name="cate_rows"><link rel="stylesheet" type="text/css" href="__CSS__/style.css" media="all"><else /> <link rel="stylesheet" type="text/css" href="__CSS__/style-default.css" media="all"></present>  
+	<link rel="stylesheet" type="text/css" href="__CSS__/{$Think.config.COLOR_STYLE}.css" media="all">
+     <!--[if lt IE 9]>
+    <script type="text/javascript" src="__STATIC__/jquery-1.10.2.min.js"></script>
+    <![endif]--><!--[if gte IE 9]><!-->
+    <script type="text/javascript" src="__STATIC__/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="__JS__/jquery.mousewheel.js"></script>
+ <script type="text/javascript" src="__JS__/highcharts.js"></script>
+<script type="text/javascript" src="__JS__/exporting.js"></script>
+<script type="text/javascript" src="__JS__/data.js"></script>
+    <!--<![endif]-->
+    <!-- easyui start-->
+    <script type="text/javascript" src="__JS__/easyui/jquery.easyui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="__JS__/easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="__JS__/easyui/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/details.css">
+    <!-- easyui end -->
+    <block name="style"></block>
+</head>
+<body style="padding:50px 0px">
+    <!-- 头部 -->
+    <div class="header">
+        <!-- Logo -->
+        <span class="logo"><!-- <img src="__IMG__/logo.png"> --></span>
+        <!-- /Logo -->
+
+        <!-- 主导航 -->
+        <ul class="main-nav">
+            <volist name="__MENU__.main" id="menu">
+                <li class="{$menu.class|default=''}"><a href="{$menu.url|get_nav_url}">{$menu.title}</a></li>
+				
+            </volist>
+			<!-- <li><a href="{:get_index_url()}" target="_blank">前台</a></li> -->
+        </ul>
+        <!-- /主导航 -->
+
+        <!-- 用户栏 -->
+        <div class="user-bar">
+            <a href="javascript:;" class="user-entrance"><i class="icon-user"></i></a>
+            <ul class="nav-list user-menu hidden">
+                <li class="manager">你好，<em title="{:session('user_auth.username')}">{:session('user_auth.username')}</em></li>
+                <li><a href="{:U('AuthManager/updatePassword')}">修改密码</a></li>
+                <!-- <li><a href="{:U('User/updateNickname')}">修改昵称</a></li> -->
+                <li><a href="{:U('Public/logout')}">退出</a></li>
+            </ul>
+        </div>
+    </div>
+ 
+    
+ <present name="cate_rows"> </div></present> 
+    <!-- 内容区 -->
+    <div id="main-content">
+        
+        <div id="main" class="main" style="text-align:center;">
+          
+
+            <block name="body"> </block>
+        </div>
+        <!-- <notpresent name="cate_rows"><div class="cont-ft">
+            <div class="copyright">
+                <div class="fl"></div>
+                <div class="fr">V{$Think.const.ONETHINK_VERSION}</div>
+            </div>
+        </div>
+    </div></notpresent> -->
+    <!-- /内容区 -->
+    
+    <script type="text/javascript" src="__STATIC__/think.js"></script>
+
+    <script type="text/javascript" src="__JS__/common.js"></script>
+    <script>
+    /* 头部管理员菜单 */
+    $(".user-bar").mouseenter(function(){
+        var userMenu = $(this).children(".user-menu ");
+        userMenu.removeClass("hidden");
+        clearTimeout(userMenu.data("timeout"));
+    }).mouseleave(function(){
+        var userMenu = $(this).children(".user-menu");
+        userMenu.data("timeout") && clearTimeout(userMenu.data("timeout"));
+        userMenu.data("timeout", setTimeout(function(){userMenu.addClass("hidden")}, 100));
+    });
+    </script>
+    <block name="script"></block>
+</body>
+</html>

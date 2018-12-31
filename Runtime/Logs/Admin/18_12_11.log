@@ -1,0 +1,167 @@
+[ 2018-12-11T17:13:21+08:00 ] ::1 /shmk/index.php?s=/Admin/Public/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008247s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001478s ]
+
+[ 2018-12-11T17:13:28+08:00 ] ::1 /shmk/index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+SQL: SHOW COLUMNS FROM `shmk_ucenter_member` [ RunTime:0.0701s ]
+SQL: SELECT * FROM `shmk_ucenter_member` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `shmk_ucenter_member` [ RunTime:0.0176s ]
+SQL: SELECT `id`,`username`,`password`,`email`,`mobile`,`reg_time`,`reg_ip`,`last_login_time`,`last_login_ip`,`update_time`,`status`,`face`,`realname` FROM `shmk_ucenter_member` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `shmk_ucenter_member` SET `last_login_time`='1544519608',`last_login_ip`='0' WHERE `id` = 1 [ RunTime:0.0007s ]
+
+[ 2018-12-11T17:13:29+08:00 ] ::1 /shmk/index.php?s=/Admin/AuthManager/index.html
+SQL: SHOW COLUMNS FROM `shmk_menu` [ RunTime:0.1291s ]
+SQL: SELECT `id`,`title`,`url` FROM `shmk_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SELECT `pid` FROM `shmk_menu` WHERE ( pid !=0 AND url like '%AuthManager/index%' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `shmk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT DISTINCT  `group` FROM `shmk_menu` WHERE `group` <> '' AND `pid` = 1 ORDER BY `sort`,`id` asc  [ RunTime:0.0008s ]
+SQL: SELECT `id`,`url` FROM `shmk_menu` WHERE `pid` = 1 AND `hide` = 0  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `shmk_menu` WHERE `group` = '管理员' AND `pid` = 1 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `shmk_menu` WHERE `group` = '系统设置' AND `pid` = 1 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `shmk_auth_group` [ RunTime:0.0681s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shmk_auth_group` WHERE `module` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`module`,`type`,`title`,`description`,`status`,`rules` FROM `shmk_auth_group` WHERE `module` = 'admin' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.123354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.123420s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000826s ]
+
+[ 2018-12-11T17:13:31+08:00 ] ::1 /shmk/index.php?s=/Admin/Member/index.html
+SQL: SHOW COLUMNS FROM `shmk_menu` [ RunTime:0.0686s ]
+SQL: SELECT `id`,`title`,`url` FROM `shmk_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SELECT `pid` FROM `shmk_menu` WHERE ( pid !=0 AND url like '%Member/index%' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `shmk_menu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT DISTINCT  `group` FROM `shmk_menu` WHERE `group` <> '' AND `pid` = 2 ORDER BY `sort`,`id` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`url` FROM `shmk_menu` WHERE `pid` = 2 AND `hide` = 0  [ RunTime:0.0009s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `shmk_menu` WHERE `group` = '用户管理' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0012s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `shmk_menu` WHERE `group` = '账单管理' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `shmk_menu` WHERE `group` = '数据备份' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: map F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\MemberController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0732s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shmk_user a WHERE a.shmk_id > 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0200s ]
+SQL: SELECT a.*,a.avatar as savatar,a.name as sname FROM shmk_user a WHERE a.shmk_id > 0 ORDER BY a.shmk_id desc LIMIT 0,10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000439s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000652s ]
+NOTIC: [8] Undefined index: account_id F:\phpstudy\phpstudy\WWW\shmk\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 135 行.
+NOTIC: [8] Undefined index: account_id F:\phpstudy\phpstudy\WWW\shmk\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000978s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001196s ]
+
+[ 2018-12-11T17:13:32+08:00 ] ::1 /shmk/index.php?s=/Admin/AuthManager/index.html
+SQL: SHOW COLUMNS FROM `shmk_auth_group` [ RunTime:0.1022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shmk_auth_group` WHERE `module` = 'admin' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`module`,`type`,`title`,`description`,`status`,`rules` FROM `shmk_auth_group` WHERE `module` = 'admin' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.138462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.138591s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000989s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001449s ]
+
+[ 2018-12-11T17:13:33+08:00 ] ::1 /shmk/index.php?s=/Admin/Parameter/shop.html
+SQL: SHOW COLUMNS FROM `shmk_menu` [ RunTime:0.0607s ]
+SQL: SELECT `id`,`title`,`url` FROM `shmk_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SELECT `pid` FROM `shmk_menu` WHERE ( pid !=0 AND url like '%Parameter/shop%' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `shmk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT DISTINCT  `group` FROM `shmk_menu` WHERE `group` <> '' AND `pid` = 1 ORDER BY `sort`,`id` asc  [ RunTime:0.0017s ]
+SQL: SELECT `id`,`url` FROM `shmk_menu` WHERE `pid` = 1 AND `hide` = 0  [ RunTime:0.0009s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `shmk_menu` WHERE `group` = '管理员' AND `pid` = 1 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `shmk_menu` WHERE `group` = '系统设置' AND `pid` = 1 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `shmk_ad_imgs` [ RunTime:0.0668s ]
+NOTIC: [8] Undefined variable: a2c F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\ParameterController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: map F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\ParameterController.class.php 第 32 行.
+NOTIC: [8] Undefined index: where F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\AdminController.class.php 第 426 行.
+SQL: SELECT COUNT(*) AS tp_count FROM shmk_ad_imgs a LEFT JOIN shmk_picture as b ON a.img_id=b.id  LIMIT 1   [ RunTime:0.0548s ]
+SQL: SELECT a.id as id,a.status as status,a.time as time,b.path as path,a.name as goods_name FROM shmk_ad_imgs a LEFT JOIN shmk_picture as b ON a.img_id=b.id  ORDER BY a.name asc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Parameter/tab.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory F:\phpstudy\phpstudy\WWW\shmk\ThinkPHP\Library\Think\Template.class.php 第 692 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.098010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098213s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000954s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001159s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001424s ]
+
+[ 2018-12-11T17:13:35+08:00 ] ::1 /shmk/index.php?s=/Admin/Parameter/addAdImg.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+NOTIC: [8] Undefined variable: info F:\phpstudy\phpstudy\WWW\shmk\Runtime\Cache\Admin\24b4f3d81d1ab09a779e0630a7d6d560.php 第 134 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\phpstudy\WWW\shmk\Runtime\Cache\Admin\24b4f3d81d1ab09a779e0630a7d6d560.php 第 137 行.
+NOTIC: [8] Undefined variable: field F:\phpstudy\phpstudy\WWW\shmk\Runtime\Cache\Admin\24b4f3d81d1ab09a779e0630a7d6d560.php 第 265 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000966s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001041s ]
+
+[ 2018-12-11T17:13:35+08:00 ] ::1 /shmk/
+SQL: SHOW COLUMNS FROM `shmk_auth_group` [ RunTime:0.0340s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shmk_auth_group` WHERE `module` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`module`,`type`,`title`,`description`,`status`,`rules` FROM `shmk_auth_group` WHERE `module` = 'admin' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114673s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000605s ]
+
+[ 2018-12-11T17:13:37+08:00 ] ::1 /shmk/index.php?s=/Admin/File/uploadPicture/session_id/1grpqc1g1dvveadru93hf7h152.html
+SQL: SHOW COLUMNS FROM `shmk_menu` [ RunTime:0.0634s ]
+SQL: SELECT `id`,`title`,`url` FROM `shmk_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `pid` FROM `shmk_menu` WHERE ( pid !=0 AND url like '%File/uploadPicture%' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `shmk_picture` [ RunTime:0.0174s ]
+SQL: SELECT `id`,`path`,`url`,`md5`,`sha1`,`status`,`create_time` FROM `shmk_picture` WHERE `md5` = 'a89a1ca4f36638a93580126117c72af6' AND `sha1` = '702e3394225dde6de8dd6e96fb74f8fab3d4cc47' LIMIT 1   [ RunTime:0.0011s ]
+SQL: INSERT INTO `shmk_picture` (`md5`,`sha1`,`path`,`status`,`create_time`) VALUES ('a89a1ca4f36638a93580126117c72af6','702e3394225dde6de8dd6e96fb74f8fab3d4cc47','/Uploads/Picture/2018-12-11/5c0f7fc1a5326.png','1','1544519617') [ RunTime:0.0009s ]
+

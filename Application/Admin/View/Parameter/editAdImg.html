@@ -1,0 +1,133 @@
+<extend name="Public/base" />
+
+<block name="body">
+    <script type="text/javascript" src="__STATIC__/uploadify/jquery.uploadify.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/UploadImages.js"></script>
+   <div class="main-title">
+       <h2>编辑广告</h2>
+    </div>
+    <div class="tab-content">
+        <!-- 表单 -->
+        <form action="{:U('editAdImg')}" class="form-horizontal" method="post" >
+            <table class="item-details">
+                <tbody>
+                    <tr class="form-item">
+                        <td class="row-left">商品</td>
+                        <td class="row-right">
+                            <div class="controls">
+                                <select name="good_id" style="width: 300px;">
+                                    <option value="{$info.good_id}">{$info.goods_name}</option>
+                                </select>
+                            </div>
+                           
+                        </td>
+                    </tr>
+
+                    <tr class="form-item">
+                    <td class="row-left">封面图片</td>
+                    <td class="row-right">
+                        <input type="file" id="upload_picture">
+                        <input type="hidden" name="icon" value="{$info.img_id|default=''}" class="icon" />
+                        <div class="upload-img-box">
+                            <notempty name="info.path">
+                            <div class="upload-pre-item">
+                            
+                                <img src=".{$model['path']|default=$info['path']}" data-id="{$info.img_id|default=''}" /> <span class='btn-close' title='删除图片' onclick='del(event);'></span>
+                            </div>
+                            </notempty>
+                        </div>
+                        <span class="check-tips">（显示在列表页中，只能上传一张图片，图片尺寸400*240）</span>
+                    </td>
+                </tr>
+                    <tr class="form-item">
+                        <td class="row-left">启用禁用</td>
+                        <td class="row-right">
+                            <label class="radio-inline">
+                                <input type="radio" name="status" value="1" <eq name="info.status" value="1">checked="true"</eq>> 启用
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="status" value="0" <eq name="info.status" value="0">checked="true"</eq>> 禁用
+                            </label>
+                            <span class="check-tips">（是否启用）</span>
+                        </td>
+                    </tr>
+                    <tr class="form-item">
+                        <input type="hidden" name="id" value="{:I('id')}">
+                        <td class="row-left"></td>
+                        <td class="row-right">
+                           <button class="btn submit-btn ajax-post hidden" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+                            <a class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</block>
+<block name="script">
+
+<script type="text/javascript">
+        /* 初始化上传插件*///单图上传图片
+        $("#upload_picture").uploadify({
+            "height"          : 30,
+            "swf"             : "__STATIC__/uploadify/uploadify.swf",
+            "fileObjName"     : "download",
+            "buttonText"      : "上传图片",
+            "uploader"        : "{:U('File/uploadPicture',array('session_id'=>session_id()))}",
+            "width"           : 120,
+            'removeTimeout'   : 1,
+            'fileTypeExts'    : '*.jpg; *.png; *.gif;',
+            "onUploadSuccess" : uploadPicture,
+           // 'uploadLimit'     : 1,//允许连续上传的次数,超过会提示
+            'onFallback' : function() {
+                alert('未检测到兼容版本的Flash.');
+            }
+        });
+    //单图
+    function uploadPicture(file, data){
+        var data = $.parseJSON(data);
+        var src = '';
+        if(data.status){
+            src = data.url || '__ROOT__' + data.path;
+            upload_img = "<div class='upload-pre-item'><img src=" + src +" title='点击显示大图' data-id="+data.id+"> <span class='btn-close btn-close-{$field.name}' title='删除图片' onclick='del(event);'></span></div>";
+            picsbox = $("#upload_picture").siblings('.upload-img-box');
+            picsbox.html(upload_img);//单图是替换
+            picArr = [];
+            for (var i = 0; i < picsbox.children().length ; i++) {
+                picArr.push(picsbox.children('.upload-pre-item:eq('+i+')').find('img').attr('data-id'));
+            };
+            picStr = picArr.join(',');
+            $('.icon').val(picStr);
+           
+        } else {
+            updateAlert(data.info);
+            setTimeout(function(){
+                $('#top-alert').find('button').click();
+                $(that).removeClass('disabled').prop('disabled',false);
+            },1500);
+        }
+    }
+
+     function del(event)
+    { //获取事件源
+        event = event ? event : window.event; 
+        var obj = event.srcElement ? event.srcElement : event.target; 
+        //这时obj就是触发事件的对象，可以使用它的各个属性 
+        //还可以将obj转换成jquery对象，方便选用其他元素 
+        str = obj.innerHTML.replace(/<\/?[^>]*>/g,''); //去除HTML tag
+
+        var $obj = $(obj);
+        $obj.parents(".upload-pre-item").remove();
+        picsbox = $("#upload_picture").siblings('.upload-img-box');
+            picArr = [];
+            for (var i = 0; i < picsbox.children().length ; i++) {
+                picArr.push(picsbox.children('.upload-pre-item:eq('+i+')').find('img').attr('data-id'));
+            };
+            picStr = picArr.join(',');
+            $('.icon').val(picStr); 
+    
+    }
+    //导航高亮
+    highlight_subnav('{:U("shop")}');
+</script>
+</block>

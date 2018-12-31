@@ -1,0 +1,186 @@
+<extend name="Public/base" />
+
+<block name="body">
+    <!-- 标题栏 -->
+    <div class="main-title">
+        <h2>用户账单</h2>
+    </div>
+    <div class="cf">
+        <div class="fl">
+            <input type="button" name="excel" value="导出为Excel" style="margin-right:5px;padding:6px 16px;font-size:14px;line-height:18px;text-align:center;vertical-align:middle;border:0 none;color:#edffd1;background-color:#4bbd00;cursor:pointer" onclick="location.href='__ROOT__/admin.php/Log/expLog'">
+        </div>
+        <!-- 高级搜索 -->
+        <div class="search-form fr cf">
+            <div class="sleft">
+            <div class="drop-down" id="status-drop-down">
+                <span id="sch-sort-txt" class="sort-txt" style="width:auto" data="{$type}"> 
+                    <switch name="type">
+                        <case value="0">充值</case>
+						<case value="1">提现</case>
+                        <case value="2">支付</case>
+                        <default/>全部类型
+                    </switch>
+                </span> <i class="arrow arrow-down"></i>
+                <ul id="sub-sch-menu" class="nav-list hidden">
+                    <li><a href="javascript:;" value="" onclick="select('');">全部类型</a></li>
+                    <li><a href="javascript:;" value="0" onclick="select('0');">充值</a></li>
+                    <li><a href="javascript:;" value="1" onclick="select('1');">提现</a></li>
+                    <li><a href="javascript:;" value="2" onclick="select('2');">支付</a></li>
+                </ul>
+            </div>
+            <div class="drop-down" id="type-drop-down">
+                    <span id="sch-sort-txt1" class="sort-txt" style="width:auto" data="{$status}"> <if
+                            condition="$status eq ''">全部状态</if> <if condition="$status eq '0'">处理中</if>
+                        <if condition="$status eq '1'">已完成</if><if condition="$status eq '-1'">已取消</if>
+                    </span> <i class="arrow arrow-down"></i>
+                    <ul id="sub-sch-menu1" class="nav-list hidden">
+                        <li><a href="javascript:;" value="" onclick="select('');">全部状态</a></li>
+                        <li><a href="javascript:;" value="0" onclick="select('0');">处理中</a></li>
+                        <li><a href="javascript:;" value="1" onclick="select('1');">已完成</a></li>
+                        <li><a href="javascript:;" value="-1" onclick="select('-1');">已取消</a></li>
+                    </ul>
+                </div>
+                <input type="text" name="selvalue" class="search-input" value="{:I('selvalue')}" placeholder="输入用户姓名/市民卡号">
+                <a class="sch-btn" href="javascript:;" id="search" url="{:U('cashflow')}"><i class="btn-search"></i></a>
+            </div>
+            <div class="btn-group-click adv-sch-pannel fl">
+                <button class="btn">高 级<i class="btn-arrowdown"></i></button>
+                <div class="dropdown cf">
+                    <div class="row">
+                        <label>时间：</label>
+                        <input type="text" id="time-start" name="time-start" class="text input-2x" value="" placeholder="起始时间" /> -
+                        <input type="text" id="time-end" name="time-end" class="text input-2x" value="" placeholder="结束时间" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 数据列表 -->
+    <div class="data-table table-striped">
+    <table class="">
+    <thead>
+        <tr>
+		<th class="" style="text-align:center">卡号</th>
+        <th class="" style="text-align:center">用户</th>
+        <th class="" style="text-align:center">信息</th>
+        <th class="" style="text-align:center">金额</th>
+		<th class="" style="text-align:center">余额</th>
+        <th class="" style="text-align:center">时间</th>
+        <th class="" style="text-align:center">类型</th>
+        <th class="" style="text-align:center">状态</th>
+        </tr>
+    </thead>
+    <tbody>
+        <notempty name="_list">
+        <volist name="_list" id="vo">
+        <tr>
+			<td style="text-align:center">{$vo.account_id}</td>
+            <td style="text-align:center">{$vo.account_name}</td>
+            <td style="text-align:center;">{$vo.info}</td>
+            <td style="text-align:center">{$vo.charge}</td>
+			<td style="text-align:center">{$vo.money}</td>
+            <td style="text-align:center">{$vo.time}</td>			
+            <td style="text-align:center"><switch name="vo.type"><case value="0">充值</case><case value="1">提现</case><case value="2">支付</case><default/>未知</switch></td>
+            <td style="text-align:center">
+                <if condition="$vo.status eq 1">
+                    已完成
+                <elseif condition="$vo.status eq 0" />
+                    处理中
+                <elseif condition="$vo.status eq -1" />
+                    已取消
+                </if>
+            </td>
+        </tr>
+        </volist>
+        <else/>
+        <td colspan="14" class="text-center"> aOh! 暂时还没有内容! </td>
+        </notempty>
+    </tbody>
+    </table>
+    </div>
+    <div class="page">
+        {$_page}
+    </div>
+</block>
+
+<block name="script">
+<link href="__STATIC__/datetimepicker/css/datetimepicker.css" rel="stylesheet" status="text/css">
+<php>if(C('COLOR_STYLE')=='blue_color') echo '<link href="__STATIC__/datetimepicker/css/datetimepicker_blue.css" rel="stylesheet" status="text/css">';</php>
+<link href="__STATIC__/datetimepicker/css/dropdown.css" rel="stylesheet" status="text/css">
+<script status="text/javascript" src="__STATIC__/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script status="text/javascript" src="__STATIC__/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+    <script type="text/javascript">
+
+    //搜索功能
+    $("#search").click(function(){
+        var url = $(this).attr('url');
+        var type = $("#sch-sort-txt").attr("data");
+        var status = $("#sch-sort-txt1").attr('data');
+        var query  = $('.search-form').find('input').serialize();
+        query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+        query = query.replace(/^&/g,'');
+        if(type != ''){
+            query = 'type=' + type + "&" + query;
+        }
+        if(status != ''){
+            query = 'status=' + status + "&" + query;
+        }
+        if( url.indexOf('?')>0 ){
+            url += '&' + query;
+        }else{
+            url += '?' + query;
+        }
+        window.location.href = url;
+    });
+    //回车搜索
+    $(".search-input").keyup(function(e){
+        if(e.keyCode === 13){
+            $("#search").click();
+            return false;
+        }
+    });
+    /* 状态搜索子菜单 */
+    $("#status-drop-down").hover(function(){
+        $("#sub-sch-menu").removeClass("hidden");
+    },function(){
+        $("#sub-sch-menu").addClass("hidden");
+    });
+    $("#sub-sch-menu li").find("a").each(function(){
+        $(this).click(function(){
+            var text = $(this).text();
+            $("#sch-sort-txt").text(text).attr("data",$(this).attr("value"));
+            $("#sub-sch-menu").addClass("hidden");
+        })
+    });
+
+    $("#type-drop-down").hover(function(){
+        $("#sub-sch-menu1").removeClass("hidden");
+    },function(){
+        $("#sub-sch-menu1").addClass("hidden");
+    });
+    $("#sub-sch-menu1 li").find("a").each(function(){
+        $(this).click(function(){
+            var text = $(this).text();
+            $("#sch-sort-txt1").text(text).attr("data",$(this).attr("value"));
+            $("#sub-sch-menu1").addClass("hidden");
+        })
+    });
+
+    $('#time-start').datetimepicker({
+        format: 'yyyy-mm-dd',
+        language:"zh-CN",
+        minView:2,
+        autoclose:true
+    });
+
+    $('#time-end').datetimepicker({
+        format: 'yyyy-mm-dd',
+        language:"zh-CN",
+        minView:2,
+        autoclose:true
+    });
+
+    //导航高亮
+    highlight_subnav('{:U('Log/cashflow')}');
+    </script>
+</block>

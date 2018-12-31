@@ -1,0 +1,14 @@
+[ 2018-12-10T23:20:06+08:00 ] ::1 /shmk/index.php?s=/Admin/Public/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.230923s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.231815s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.038039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.038118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.023289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.023368s ]
+

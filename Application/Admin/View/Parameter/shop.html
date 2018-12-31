@@ -1,0 +1,95 @@
+<extend name="Public/base" />
+
+<block name="body">
+	<div class="main-title">
+		<h2>广告位管理</h2>
+	</div>
+	<!-- tab切换 -->
+	<!-- <include file='Parameter/tab' /> -->
+    <!-- 数据列表 -->
+	<div style="margin-bottom:20px;margin-top">
+		<a class="btn" href="{:U('Parameter/addAdImg')}">新 增</a>
+		<a class="btn" href="{:U('Parameter/delAdImg')}">删 除</a>
+		 <div class="search-form fr cf">
+			<div class="sleft">
+                <input type="text" name="selvalue" class="search-input" value="{:I('selvalue')}" placeholder="输入商品名称">
+                <a class="sch-btn" href="javascript:;" id="search" url="{:U('shop')}"><i class="btn-search"></i></a>
+			</div>
+          </div>
+    </div>
+    <div class="data-table table-striped">
+	<table class="" style="text-align:center;">
+    <thead >
+        <tr>
+		<!-- <th class="row-selected row-selected"><input class="check-all" type="checkbox"/></th> -->
+		<th class="" style="text-align:center;">id</th>
+		<th class="" style="text-align:center;">商品名</th>
+		<th class="" style="text-align:center;">广告图片</th>
+		<th class="" style="text-align:center;">最后修改时间</th>
+		<th class="" style="text-align:center;">状态</th>
+		<th class="" style="text-align:center;">操作</th>
+		</tr>
+    </thead>
+    <tbody>
+		<notempty name ="list">
+		<volist name="list" id="vo">
+		<tr>
+           
+            <td>{$vo.id}</td>
+            <td>{$vo.goods_name}</td>
+            <td><img style="width: 120px;height: 60px;" src="__ROOT__{$vo.path}"></td>
+            <td>{$vo.time}</td>
+            <td>{$vo.status_text}</td>
+			<td>
+				<if condition="$vo.status eq 1">
+					<a class="ajax-get confirm" href="{:U('Parameter/onoff?status=0&id='.$vo['id'])}">禁用 </a>|
+				<else />
+					<a class="ajax-get" href="{:U('Parameter/onoff?status=1&id='.$vo['id'])}">启用 </a>|
+				</if>
+				<a href="{:U('Parameter/editAdImg?id='.$vo['id'])}">编辑</a>
+			</td>
+		</tr>
+		</volist>
+		<else/>
+		<td colspan="14" class="text-center"> aOh! 暂时还没有内容! </td>
+		</notempty>
+	</tbody>
+    </table>
+	</div>
+    <div class="page">
+        {$_page}
+    </div>
+</block>
+
+<block name="script">
+	<script type="text/javascript">
+
+	//搜索功能
+	$("#search").click(function(){
+		var url = $(this).attr('url');
+        var query  = $('.search-form').find('input').serialize();
+        query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+        query = query.replace(/^&/g,'');
+        if(status != ''){
+			query = 'status=' + status + "&" + query;
+        }
+        if( url.indexOf('?')>0 ){
+            url += '&' + query;
+        }else{
+            url += '?' + query;
+        }
+		window.location.href = url;
+	});
+	//回车搜索
+	$(".search-input").keyup(function(e){
+		if(e.keyCode === 13){
+			$("#search").click();
+			return false;
+		}
+	});
+
+
+    //导航高亮
+    highlight_subnav('{:U('shop')}');
+	</script>
+</block>

@@ -1,0 +1,24 @@
+.item-details{width:100%;}
+.item-details td{
+      padding: 10px 10px 20px 10px;
+  }
+  .row-left{
+      text-align: right;
+      font-weight: bold;
+      font-size: 16px;
+  }
+  .row-right{
+      font-size: 16px;
+      max-width: 600px;
+  }
+  .item-details td{
+      max-width: 800px;
+      word-break: break-all;
+  }
+  .return-btn-container td{
+      padding: 30px;
+  }
+  .check-tips{
+    color: #aaa;
+  }
+  .item-details .row-left{width:180px;}

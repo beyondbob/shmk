@@ -1,0 +1,1415 @@
+[ 2018-12-23T09:31:44+08:00 ] ::1 /shmk/
+SQL: SHOW COLUMNS FROM `shmk_auth_group` [ RunTime:0.4018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shmk_auth_group` WHERE `module` = 'admin' LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT `id`,`module`,`type`,`title`,`description`,`status`,`rules` FROM `shmk_auth_group` WHERE `module` = 'admin' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0254s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000352s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000482s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.571832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.571935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.028527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.028657s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.035439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.035627s ]
+
+[ 2018-12-23T09:31:44+08:00 ] ::1 /shmk/
+SQL: SHOW COLUMNS FROM `shmk_auth_group` [ RunTime:0.0551s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shmk_auth_group` WHERE `module` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`module`,`type`,`title`,`description`,`status`,`rules` FROM `shmk_auth_group` WHERE `module` = 'admin' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.154278s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.154372s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003104s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003266s ]
+
+[ 2018-12-23T09:31:52+08:00 ] ::1 /shmk/index.php?s=/Admin/Member/index.html
+NOTIC: [8] Undefined variable: map F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\MemberController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0934s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shmk_user a WHERE a.shmk_id > 0 LIMIT 1   [ RunTime:0.0203s ]
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0203s ]
+SQL: SELECT a.*,a.avatar as savatar,a.name as sname FROM shmk_user a WHERE a.shmk_id > 0 ORDER BY a.shmk_id desc LIMIT 0,10   [ RunTime:0.0398s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+NOTIC: [8] Undefined index: account_id F:\phpstudy\phpstudy\WWW\shmk\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 135 行.
+NOTIC: [8] Undefined index: account_id F:\phpstudy\phpstudy\WWW\shmk\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.211542s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.211646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001991s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004533s ]
+
+[ 2018-12-23T09:31:56+08:00 ] ::1 /shmk/index.php?s=/Admin/Member/changeStatus/method/forbid.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002572s ]
+
+[ 2018-12-23T09:35:42+08:00 ] ::1 /shmk/index.php?s=/Admin/Member/index.html
+NOTIC: [8] Undefined variable: map F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\MemberController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0326s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shmk_user a WHERE a.shmk_id > 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0225s ]
+SQL: SELECT a.*,a.avatar as savatar,a.name as sname FROM shmk_user a WHERE a.shmk_id > 0 ORDER BY a.shmk_id desc LIMIT 0,10   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000278s ]
+NOTIC: [8] Undefined index: account_id F:\phpstudy\phpstudy\WWW\shmk\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.206427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.206576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008580s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008642s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.048232s ]
+INFO: [ app_end ] --END-- [ RunTime:0.048361s ]
+
+[ 2018-12-23T09:35:43+08:00 ] ::1 /shmk/index.php?s=/Admin/Member/index.html
+NOTIC: [8] Undefined variable: map F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\MemberController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0301s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shmk_user a WHERE a.shmk_id > 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0194s ]
+SQL: SELECT a.*,a.avatar as savatar,a.name as sname FROM shmk_user a WHERE a.shmk_id > 0 ORDER BY a.shmk_id desc LIMIT 0,10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+NOTIC: [8] Undefined index: account_id F:\phpstudy\phpstudy\WWW\shmk\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001985s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002149s ]
+
+[ 2018-12-23T09:35:55+08:00 ] ::1 /shmk/index.php?s=/Admin/Member/changeStatus/method/forbid.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001289s ]
+
+[ 2018-12-23T09:36:10+08:00 ] ::1 /shmk/index.php?s=/Admin/Public/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001540s ]
+
+[ 2018-12-23T09:36:29+08:00 ] ::1 /shmk/index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002435s ]
+SQL: SHOW COLUMNS FROM `shmk_ucenter_member` [ RunTime:0.1355s ]
+SQL: SELECT * FROM `shmk_ucenter_member` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `shmk_ucenter_member` [ RunTime:0.0432s ]
+SQL: SELECT `id`,`username`,`password`,`email`,`mobile`,`reg_time`,`reg_ip`,`last_login_time`,`last_login_ip`,`update_time`,`status`,`face`,`realname` FROM `shmk_ucenter_member` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `shmk_ucenter_member` SET `last_login_time`='1545528989',`last_login_ip`='0' WHERE `id` = 1 [ RunTime:0.0378s ]
+
+[ 2018-12-23T09:36:30+08:00 ] ::1 /shmk/index.php?s=/Admin/AuthManager/index.html
+SQL: SHOW COLUMNS FROM `shmk_menu` [ RunTime:0.2196s ]
+SQL: SELECT `id`,`title`,`url` FROM `shmk_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0124s ]
+SQL: SELECT `pid` FROM `shmk_menu` WHERE ( pid !=0 AND url like '%AuthManager/index%' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `shmk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT DISTINCT  `group` FROM `shmk_menu` WHERE `group` <> '' AND `pid` = 1 ORDER BY `sort`,`id` asc  [ RunTime:0.0016s ]
+SQL: SELECT `id`,`url` FROM `shmk_menu` WHERE `pid` = 1 AND `hide` = 0  [ RunTime:0.0013s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `shmk_menu` WHERE `group` = '管理员' AND `pid` = 1 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `shmk_menu` WHERE `group` = '系统设置' AND `pid` = 1 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `shmk_auth_group` [ RunTime:0.0264s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shmk_auth_group` WHERE `module` = 'admin' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`module`,`type`,`title`,`description`,`status`,`rules` FROM `shmk_auth_group` WHERE `module` = 'admin' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.175299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.175376s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001884s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001985s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002958s ]
+
+[ 2018-12-23T09:36:41+08:00 ] ::1 /shmk/index.php?s=/Admin/Member/index.html
+SQL: SHOW COLUMNS FROM `shmk_menu` [ RunTime:0.0642s ]
+SQL: SELECT `id`,`title`,`url` FROM `shmk_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SELECT `pid` FROM `shmk_menu` WHERE ( pid !=0 AND url like '%Member/index%' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shmk_menu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT DISTINCT  `group` FROM `shmk_menu` WHERE `group` <> '' AND `pid` = 2 ORDER BY `sort`,`id` asc  [ RunTime:0.0012s ]
+SQL: SELECT `id`,`url` FROM `shmk_menu` WHERE `pid` = 2 AND `hide` = 0  [ RunTime:0.0008s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `shmk_menu` WHERE `group` = '用户管理' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `shmk_menu` WHERE `group` = '账单管理' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `shmk_menu` WHERE `group` = '数据备份' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: map F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\MemberController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0207s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shmk_user a WHERE a.shmk_id > 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0184s ]
+SQL: SELECT a.*,a.avatar as savatar,a.name as sname FROM shmk_user a WHERE a.shmk_id > 0 ORDER BY a.shmk_id desc LIMIT 0,10   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+NOTIC: [8] Undefined index: account_id F:\phpstudy\phpstudy\WWW\shmk\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002774s ]
+
+[ 2018-12-23T09:36:47+08:00 ] ::1 /shmk/index.php?s=/Admin/Member/changeStatus/method/forbid.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002261s ]
+
+[ 2018-12-23T09:37:24+08:00 ] ::1 /shmk/index.php?s=/Admin/Member/index.html
+NOTIC: [8] Undefined variable: map F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\MemberController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0258s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shmk_user a WHERE a.shmk_id > 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0207s ]
+SQL: SELECT a.*,a.avatar as savatar,a.name as sname FROM shmk_user a WHERE a.shmk_id > 0 ORDER BY a.shmk_id desc LIMIT 0,10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+NOTIC: [8] Undefined index: account_id F:\phpstudy\phpstudy\WWW\shmk\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.099381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001854s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-12-23T09:37:27+08:00 ] ::1 /shmk/index.php?s=/Admin/Member/index.html
+NOTIC: [8] Undefined variable: map F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\MemberController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0375s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shmk_user a WHERE a.shmk_id > 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0313s ]
+SQL: SELECT a.*,a.avatar as savatar,a.name as sname FROM shmk_user a WHERE a.shmk_id > 0 ORDER BY a.shmk_id desc LIMIT 0,10   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+NOTIC: [8] Undefined index: account_id F:\phpstudy\phpstudy\WWW\shmk\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.149017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.149097s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001631s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001887s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002012s ]
+
+[ 2018-12-23T09:37:28+08:00 ] ::1 /shmk/index.php?s=/Admin/Member/index.html
+NOTIC: [8] Undefined variable: map F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\MemberController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0395s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shmk_user a WHERE a.shmk_id > 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0212s ]
+SQL: SELECT a.*,a.avatar as savatar,a.name as sname FROM shmk_user a WHERE a.shmk_id > 0 ORDER BY a.shmk_id desc LIMIT 0,10   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000239s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+NOTIC: [8] Undefined index: account_id F:\phpstudy\phpstudy\WWW\shmk\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.136449s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.136536s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001897s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001982s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002288s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002386s ]
+
+[ 2018-12-23T09:37:41+08:00 ] ::1 /shmk/index.php?s=/Admin/Member/changeStatus/method/forbid.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001026s ]
+
+[ 2018-12-23T09:37:55+08:00 ] ::1 /shmk/index.php?s=/Admin/Public/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000246s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000410s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015431s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016137s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001531s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001619s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001879s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002004s ]
+
+[ 2018-12-23T09:38:05+08:00 ] ::1 /shmk/index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002232s ]
+SQL: SHOW COLUMNS FROM `shmk_ucenter_member` [ RunTime:0.0283s ]
+SQL: SELECT * FROM `shmk_ucenter_member` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `shmk_ucenter_member` [ RunTime:0.0237s ]
+SQL: SELECT `id`,`username`,`password`,`email`,`mobile`,`reg_time`,`reg_ip`,`last_login_time`,`last_login_ip`,`update_time`,`status`,`face`,`realname` FROM `shmk_ucenter_member` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0012s ]
+SQL: UPDATE `shmk_ucenter_member` SET `last_login_time`='1545529085',`last_login_ip`='0' WHERE `id` = 1 [ RunTime:0.0014s ]
+
+[ 2018-12-23T09:38:05+08:00 ] ::1 /shmk/index.php?s=/Admin/AuthManager/index.html
+SQL: SHOW COLUMNS FROM `shmk_menu` [ RunTime:0.0683s ]
+SQL: SELECT `id`,`title`,`url` FROM `shmk_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SELECT `pid` FROM `shmk_menu` WHERE ( pid !=0 AND url like '%AuthManager/index%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `shmk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT DISTINCT  `group` FROM `shmk_menu` WHERE `group` <> '' AND `pid` = 1 ORDER BY `sort`,`id` asc  [ RunTime:0.0011s ]
+SQL: SELECT `id`,`url` FROM `shmk_menu` WHERE `pid` = 1 AND `hide` = 0  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `shmk_menu` WHERE `group` = '管理员' AND `pid` = 1 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `shmk_menu` WHERE `group` = '系统设置' AND `pid` = 1 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `shmk_auth_group` [ RunTime:0.0298s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shmk_auth_group` WHERE `module` = 'admin' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`module`,`type`,`title`,`description`,`status`,`rules` FROM `shmk_auth_group` WHERE `module` = 'admin' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.132514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.132593s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001939s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002030s ]
+
+[ 2018-12-23T09:38:08+08:00 ] ::1 /shmk/index.php?s=/Admin/Member/index.html
+SQL: SHOW COLUMNS FROM `shmk_menu` [ RunTime:0.0664s ]
+SQL: SELECT `id`,`title`,`url` FROM `shmk_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SELECT `pid` FROM `shmk_menu` WHERE ( pid !=0 AND url like '%Member/index%' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `shmk_menu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT DISTINCT  `group` FROM `shmk_menu` WHERE `group` <> '' AND `pid` = 2 ORDER BY `sort`,`id` asc  [ RunTime:0.0011s ]
+SQL: SELECT `id`,`url` FROM `shmk_menu` WHERE `pid` = 2 AND `hide` = 0  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `shmk_menu` WHERE `group` = '用户管理' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `shmk_menu` WHERE `group` = '账单管理' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `shmk_menu` WHERE `group` = '数据备份' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: map F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\MemberController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0217s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shmk_user a WHERE a.shmk_id > 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0184s ]
+SQL: SELECT a.*,a.avatar as savatar,a.name as sname FROM shmk_user a WHERE a.shmk_id > 0 ORDER BY a.shmk_id desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+NOTIC: [8] Undefined index: account_id F:\phpstudy\phpstudy\WWW\shmk\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090493s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090556s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002148s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002247s ]
+
+[ 2018-12-23T09:38:13+08:00 ] ::1 /shmk/index.php?s=/Admin/Member/changeStatus/method/forbid.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002245s ]
+
+[ 2018-12-23T09:43:37+08:00 ] ::1 /shmk/index.php?s=/Admin/Member/changeStatus/method/forbid.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002388s ]
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0240s ]
+SQL: UPDATE `shmk_user` SET `status`='0' WHERE `shmk_id` IN ('100001') [ RunTime:0.0869s ]
+
+[ 2018-12-23T09:43:39+08:00 ] ::1 /shmk/index.php?s=/Admin/Member/index.html
+NOTIC: [8] Undefined variable: map F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\MemberController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0240s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shmk_user a WHERE a.shmk_id > 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0212s ]
+SQL: SELECT a.*,a.avatar as savatar,a.name as sname FROM shmk_user a WHERE a.shmk_id > 0 ORDER BY a.shmk_id desc LIMIT 0,10   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+NOTIC: [8] Undefined index: account_id F:\phpstudy\phpstudy\WWW\shmk\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.117502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001549s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004204s ]
+
+[ 2018-12-23T09:43:45+08:00 ] ::1 /shmk/index.php?s=/Admin/Member/changeStatus/method/resume.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002717s ]
+
+[ 2018-12-23T09:43:51+08:00 ] ::1 /shmk/index.php?s=/Admin/Member/changeStatus/method/resume.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002912s ]
+
+[ 2018-12-23T09:43:55+08:00 ] ::1 /shmk/index.php?s=/Admin/Member/changeStatus/method/resume.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002494s ]
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0268s ]
+SQL: UPDATE `shmk_user` SET `status`='1' WHERE `shmk_id` IN ('100001') [ RunTime:0.0693s ]
+
+[ 2018-12-23T09:43:57+08:00 ] ::1 /shmk/index.php?s=/Admin/Member/index.html
+NOTIC: [8] Undefined variable: map F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\MemberController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0366s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shmk_user a WHERE a.shmk_id > 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0276s ]
+SQL: SELECT a.*,a.avatar as savatar,a.name as sname FROM shmk_user a WHERE a.shmk_id > 0 ORDER BY a.shmk_id desc LIMIT 0,10   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000246s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000342s ]
+NOTIC: [8] Undefined index: account_id F:\phpstudy\phpstudy\WWW\shmk\Runtime\Cache\Admin\cd4483014f2e11fff8848d4b0b1995b7.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.148030s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.148134s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002454s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002527s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004564s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004696s ]
+
+[ 2018-12-23T09:44:54+08:00 ] ::1 /shmk/index.php?s=/Admin/Member/index.html
+NOTIC: [8] Undefined variable: map F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\MemberController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0252s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shmk_user a WHERE a.shmk_id > 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0182s ]
+SQL: SELECT a.*,a.avatar as savatar,a.name as sname FROM shmk_user a WHERE a.shmk_id > 0 ORDER BY a.shmk_id desc LIMIT 0,10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093245s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093318s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001411s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001455s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003178s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003340s ]
+
+[ 2018-12-23T09:44:58+08:00 ] ::1 /shmk/index.php?s=/Admin/Member/changeStatus/method/forbid/account_id/100001.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002669s ]
+
+[ 2018-12-23T09:45:24+08:00 ] ::1 /shmk/index.php?s=/Admin/Member/index.html
+NOTIC: [8] Undefined variable: map F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\MemberController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0257s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shmk_user a WHERE a.shmk_id > 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0180s ]
+SQL: SELECT a.*,a.avatar as savatar,a.name as sname FROM shmk_user a WHERE a.shmk_id > 0 ORDER BY a.shmk_id desc LIMIT 0,10   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000309s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103710s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103787s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001774s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001935s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002870s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003167s ]
+
+[ 2018-12-23T09:45:27+08:00 ] ::1 /shmk/index.php?s=/Admin/Member/changeStatus/method/forbid/shmk_id/100001.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001476s ]
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0287s ]
+SQL: UPDATE `shmk_user` SET `status`='0' WHERE `shmk_id` IN ('100001') [ RunTime:0.0586s ]
+
+[ 2018-12-23T09:45:29+08:00 ] ::1 /shmk/index.php?s=/Admin/Member/index.html
+NOTIC: [8] Undefined variable: map F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\MemberController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0251s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shmk_user a WHERE a.shmk_id > 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0186s ]
+SQL: SELECT a.*,a.avatar as savatar,a.name as sname FROM shmk_user a WHERE a.shmk_id > 0 ORDER BY a.shmk_id desc LIMIT 0,10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096435s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001865s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001959s ]
+
+[ 2018-12-23T10:27:33+08:00 ] ::1 /shmk/index.php?s=/Admin/Member/index.html
+NOTIC: [8] Undefined variable: map F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\MemberController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0286s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shmk_user a WHERE a.shmk_id > 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0214s ]
+SQL: SELECT a.*,a.avatar as savatar,a.name as sname FROM shmk_user a WHERE a.shmk_id > 0 ORDER BY a.shmk_id desc LIMIT 0,10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101089s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002099s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002181s ]
+
+[ 2018-12-23T10:27:35+08:00 ] ::1 /shmk/index.php?s=/Admin/Log/cashflow.html
+SQL: SHOW COLUMNS FROM `shmk_menu` [ RunTime:0.0742s ]
+SQL: SELECT `id`,`title`,`url` FROM `shmk_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `pid` FROM `shmk_menu` WHERE ( pid !=0 AND url like '%Log/cashflow%' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `shmk_menu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT DISTINCT  `group` FROM `shmk_menu` WHERE `group` <> '' AND `pid` = 2 ORDER BY `sort`,`id` asc  [ RunTime:0.0012s ]
+SQL: SELECT `id`,`url` FROM `shmk_menu` WHERE `pid` = 2 AND `hide` = 0  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `shmk_menu` WHERE `group` = '用户管理' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `shmk_menu` WHERE `group` = '账单管理' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `shmk_menu` WHERE `group` = '数据备份' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `shmk_cashflow` [ RunTime:0.0694s ]
+NOTIC: [8] Undefined variable: map F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 62 行.
+NOTIC: [8] Undefined index: where F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\AdminController.class.php 第 426 行.
+SQL: SELECT COUNT(*) AS tp_count FROM shmk_cashflow as a LEFT JOIN shmk_user as b ON a.account_id = b.shmk_id  LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT a.*,name as account_name,`charge`,`type`,`time`,`info` FROM shmk_cashflow as a LEFT JOIN shmk_user as b ON a.account_id = b.shmk_id  ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119968s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.120037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001383s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002099s ]
+
+[ 2018-12-23T10:35:28+08:00 ] ::1 /shmk/index.php?s=/Admin/Log/cashflow.html
+SQL: SHOW COLUMNS FROM `shmk_cashflow` [ RunTime:0.0316s ]
+NOTIC: [8] Undefined variable: map F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 62 行.
+NOTIC: [8] Undefined index: where F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\AdminController.class.php 第 426 行.
+SQL: SELECT COUNT(*) AS tp_count FROM shmk_cashflow as a LEFT JOIN shmk_user as b ON a.account_id = b.shmk_id  LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT a.*,name as account_name,`charge`,`type`,`time`,`info` FROM shmk_cashflow as a LEFT JOIN shmk_user as b ON a.account_id = b.shmk_id  ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.108409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001570s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002146s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002236s ]
+
+[ 2018-12-23T10:35:31+08:00 ] ::1 /shmk/admin.php/Log/pay_datareport
+SQL: SHOW COLUMNS FROM `shmk_cashflow` [ RunTime:0.0224s ]
+SQL: SELECT count(a1.id) as times FROM shmk_cashflow as a1 RIGHT JOIN shmk_month as b1 ON MONTH(a1.time) = b1.month LEFT JOIN shmk_dt_record as c1 ON a1.time=c1.out_station_time and a1.account_id=c1.account_id  WHERE ( a1.paytype=0 and a1.type=2 or a1.type is NULL ) GROUP BY b1.month  [ RunTime:0.1832s ]
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+SQL: SHOW COLUMNS FROM `shmk_cashflow` [ RunTime:0.0916s ]
+SQL: SELECT count(a2.id) as times FROM shmk_cashflow as a2 RIGHT JOIN shmk_month as b2 ON MONTH(a2.time) = b2.month LEFT JOIN shmk_dt_record as c2 ON a2.time=c2.out_station_time and a2.account_id=c2.account_id  WHERE ( YEAR(a2.time)=date("Y") and a2.paytype=1 and (a2.type=2 or a2.type is NULL) ) GROUP BY b2.month  [ RunTime:0.0274s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 185 行.
+NOTIC: [8] Undefined variable: data2 F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 192 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 192 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000459s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000664s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.252100s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.252193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001511s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002982s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003063s ]
+
+[ 2018-12-23T10:37:08+08:00 ] ::1 /shmk/admin.php/Log/pay_datareport
+SQL: SHOW COLUMNS FROM `shmk_cashflow` [ RunTime:0.0294s ]
+SQL: SELECT count(a1.id) as times FROM shmk_cashflow as a1 RIGHT JOIN shmk_month as b1 ON MONTH(a1.time) = b1.month LEFT JOIN shmk_dt_record as c1 ON a1.time=c1.out_station_time and a1.account_id=c1.account_id  WHERE ( a1.paytype=0 and a1.type=2 or a1.type is NULL ) GROUP BY b1.month  [ RunTime:0.0019s ]
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+SQL: SHOW COLUMNS FROM `shmk_cashflow` [ RunTime:0.0178s ]
+SQL: SELECT count(a2.id) as times FROM shmk_cashflow as a2 RIGHT JOIN shmk_month as b2 ON MONTH(a2.time) = b2.month LEFT JOIN shmk_dt_record as c2 ON a2.time=c2.out_station_time and a2.account_id=c2.account_id  WHERE ( YEAR(a2.time)=date("Y") and a2.paytype=1 and (a2.type=2 or a2.type is NULL) ) GROUP BY b2.month  [ RunTime:0.0011s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 185 行.
+NOTIC: [8] Undefined variable: data2 F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 192 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 192 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093372s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002720s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002788s ]
+
+[ 2018-12-23T10:38:17+08:00 ] ::1 /shmk/admin.php/Log/pay_datareport
+SQL: SHOW COLUMNS FROM `shmk_cashflow` [ RunTime:0.0257s ]
+SQL: SELECT count(a1.id) as times FROM shmk_cashflow as a1 RIGHT JOIN shmk_month as b1 ON MONTH(a1.time) = b1.month LEFT JOIN shmk_dt_record as c1 ON a1.time=c1.out_station_time and a1.account_id=c1.account_id  WHERE ( a1.paytype=0 and a1.type=2 or a1.type is NULL ) GROUP BY b1.month  [ RunTime:0.0017s ]
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+SQL: SHOW COLUMNS FROM `shmk_cashflow` [ RunTime:0.0174s ]
+SQL: SELECT count(a2.id) as times FROM shmk_cashflow as a2 RIGHT JOIN shmk_month as b2 ON MONTH(a2.time) = b2.month LEFT JOIN shmk_dt_record as c2 ON a2.time=c2.out_station_time and a2.account_id=c2.account_id  WHERE ( YEAR(a2.time)=date("Y") and a2.paytype=1 and (a2.type=2 or a2.type is NULL) ) GROUP BY b2.month  [ RunTime:0.0012s ]
+
+[ 2018-12-23T10:38:45+08:00 ] ::1 /shmk/admin.php/Log/pay_datareport
+SQL: SHOW COLUMNS FROM `shmk_cashflow` [ RunTime:0.0242s ]
+SQL: SELECT count(a1.id) as times FROM shmk_cashflow as a1 RIGHT JOIN shmk_month as b1 ON MONTH(a1.time) = b1.month LEFT JOIN shmk_dt_record as c1 ON a1.time=c1.out_station_time and a1.account_id=c1.account_id  WHERE ( a1.paytype=0 and a1.type=2 or a1.type is NULL ) GROUP BY b1.month  [ RunTime:0.0024s ]
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+SQL: SHOW COLUMNS FROM `shmk_cashflow` [ RunTime:0.0184s ]
+SQL: SELECT count(a2.id) as times FROM shmk_cashflow as a2 RIGHT JOIN shmk_month as b2 ON MONTH(a2.time) = b2.month LEFT JOIN shmk_dt_record as c2 ON a2.time=c2.out_station_time and a2.account_id=c2.account_id  WHERE ( YEAR(a2.time)=date("Y") and a2.paytype=1 and (a2.type=2 or a2.type is NULL) ) GROUP BY b2.month  [ RunTime:0.0012s ]
+
+[ 2018-12-23T10:39:06+08:00 ] ::1 /shmk/admin.php/Log/pay_datareport
+SQL: SHOW COLUMNS FROM `shmk_cashflow` [ RunTime:0.0235s ]
+SQL: SELECT count(a1.id) as times FROM shmk_cashflow as a1 RIGHT JOIN shmk_month as b1 ON MONTH(a1.time) = b1.month LEFT JOIN shmk_dt_record as c1 ON a1.time=c1.out_station_time and a1.account_id=c1.account_id  WHERE ( a1.paytype=0 and a1.type=2 or a1.type is NULL ) GROUP BY b1.month  [ RunTime:0.0014s ]
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+SQL: SHOW COLUMNS FROM `shmk_cashflow` [ RunTime:0.0177s ]
+SQL: SELECT count(a2.id) as times FROM shmk_cashflow as a2 RIGHT JOIN shmk_month as b2 ON MONTH(a2.time) = b2.month LEFT JOIN shmk_dt_record as c2 ON a2.time=c2.out_station_time and a2.account_id=c2.account_id  WHERE ( YEAR(a2.time)=date("Y") and a2.paytype=1 and a2.type=2 or a2.type is NULL ) GROUP BY b2.month  [ RunTime:0.0013s ]
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090303s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001469s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003096s ]
+
+[ 2018-12-23T10:41:55+08:00 ] ::1 /shmk/admin.php/Log/pay_datareport
+SQL: SHOW COLUMNS FROM `shmk_cashflow` [ RunTime:0.0354s ]
+SQL: SELECT count(a1.id) as times FROM shmk_cashflow as a1 RIGHT JOIN shmk_month as b1 ON MONTH(a1.time) = b1.month LEFT JOIN shmk_dt_record as c1 ON a1.time=c1.out_station_time and a1.account_id=c1.account_id  WHERE ( YEAR(a1.time)=date("Y") and a1.paytype=0 and a1.type=2 or a1.type is NULL ) GROUP BY b1.month  [ RunTime:0.0016s ]
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+SQL: SHOW COLUMNS FROM `shmk_cashflow` [ RunTime:0.0199s ]
+SQL: SELECT count(a2.id) as times FROM shmk_cashflow as a2 RIGHT JOIN shmk_month as b2 ON MONTH(a2.time) = b2.month LEFT JOIN shmk_dt_record as c2 ON a2.time=c2.out_station_time and a2.account_id=c2.account_id  WHERE ( YEAR(a2.time)=date("Y") and a2.paytype=1 and a2.type=2 or a2.type is NULL ) GROUP BY b2.month  [ RunTime:0.0014s ]
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001792s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001854s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004078s ]
+
+[ 2018-12-23T10:42:02+08:00 ] ::1 /shmk/admin.php?s=/Log/drivingrecord.html
+SQL: SHOW COLUMNS FROM `shmk_dt_record` [ RunTime:0.0317s ]
+NOTIC: [8] Undefined variable: map F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 130 行.
+NOTIC: [8] Undefined index: where F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\AdminController.class.php 第 426 行.
+SQL: SELECT COUNT(*) AS tp_count FROM shmk_dt_record as a LEFT JOIN shmk_user as b ON a.account_id = b.shmk_id LEFT JOIN shmk_cashflow as c ON a.out_station_time = c.time and a.account_id=c.account_id  LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT a.*,a.account_id,b.name as account_name,b.tel,`in_station`,`out_station`,`in_station_time`,`out_station_time`,c.paytype,`check`,c.money FROM shmk_dt_record as a LEFT JOIN shmk_user as b ON a.account_id = b.shmk_id LEFT JOIN shmk_cashflow as c ON a.out_station_time = c.time and a.account_id=c.account_id  ORDER BY `out_station_time` desc LIMIT 0,10   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.155524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.155667s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001737s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001790s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002714s ]
+
+[ 2018-12-23T10:42:05+08:00 ] ::1 /shmk/admin.php/Log/dt_datareport
+SQL: SHOW COLUMNS FROM `shmk_dt_record` [ RunTime:0.0335s ]
+SQL: SELECT count(a.id) as times FROM shmk_dt_record as a RIGHT JOIN shmk_month as b ON MONTH(a.out_station_time) = b.month  WHERE ( YEAR(a.out_station_time)=date("Y") ) GROUP BY month  [ RunTime:0.0012s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 148 行.
+NOTIC: [8] Undefined variable: data F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 154 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 154 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109345s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109421s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001724s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001781s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003069s ]
+
+[ 2018-12-23T10:44:28+08:00 ] ::1 /shmk/admin.php/Log/dt_datareport
+SQL: SHOW COLUMNS FROM `shmk_dt_record` [ RunTime:0.0440s ]
+SQL: SELECT count(a.id) as times FROM shmk_dt_record as a RIGHT JOIN shmk_month as b ON MONTH(a.out_station_time) = b.month  WHERE ( YEAR(a.out_station_time) = date("Y") ) GROUP BY month  [ RunTime:0.0013s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 148 行.
+NOTIC: [8] Undefined variable: data F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 154 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 154 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001560s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002421s ]
+
+[ 2018-12-23T10:44:31+08:00 ] ::1 /shmk/admin.php?s=/Log/drivingrecord.html
+SQL: SHOW COLUMNS FROM `shmk_dt_record` [ RunTime:0.0323s ]
+NOTIC: [8] Undefined variable: map F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 130 行.
+NOTIC: [8] Undefined index: where F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\AdminController.class.php 第 426 行.
+SQL: SELECT COUNT(*) AS tp_count FROM shmk_dt_record as a LEFT JOIN shmk_user as b ON a.account_id = b.shmk_id LEFT JOIN shmk_cashflow as c ON a.out_station_time = c.time and a.account_id=c.account_id  LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT a.*,a.account_id,b.name as account_name,b.tel,`in_station`,`out_station`,`in_station_time`,`out_station_time`,c.paytype,`check`,c.money FROM shmk_dt_record as a LEFT JOIN shmk_user as b ON a.account_id = b.shmk_id LEFT JOIN shmk_cashflow as c ON a.out_station_time = c.time and a.account_id=c.account_id  ORDER BY `out_station_time` desc LIMIT 0,10   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105983s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001747s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001801s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002999s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003083s ]
+
+[ 2018-12-23T10:44:37+08:00 ] ::1 /shmk/admin.php/Log/dt_datareport
+SQL: SHOW COLUMNS FROM `shmk_dt_record` [ RunTime:0.0323s ]
+SQL: SELECT count(a.id) as times FROM shmk_dt_record as a RIGHT JOIN shmk_month as b ON MONTH(a.out_station_time) = b.month  WHERE ( YEAR(a.out_station_time) = date("Y") ) GROUP BY month  [ RunTime:0.0013s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 148 行.
+NOTIC: [8] Undefined variable: data F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 154 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 154 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088908s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001650s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001699s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002202s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002281s ]
+
+[ 2018-12-23T10:48:19+08:00 ] ::1 /shmk/admin.php/Log/dt_datareport
+SQL: SHOW COLUMNS FROM `shmk_dt_record` [ RunTime:0.0457s ]
+SQL: SELECT count(a.id) as times FROM shmk_dt_record as a RIGHT JOIN shmk_month as b ON MONTH(a.out_station_time) = b.month  WHERE ( YEAR(out_station_time) = date("Y") ) GROUP BY month  [ RunTime:0.0015s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 148 行.
+NOTIC: [8] Undefined variable: data F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 154 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 154 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001519s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002725s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002793s ]
+
+[ 2018-12-23T10:52:08+08:00 ] ::1 /shmk/admin.php/Log/dt_datareport
+SQL: SHOW COLUMNS FROM `shmk_dt_record` [ RunTime:0.0287s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=> date("Y") ) GROUP BY month' at line 1
+
+[ 2018-12-23T10:52:58+08:00 ] ::1 /shmk/admin.php/Log/dt_datareport
+SQL: SHOW COLUMNS FROM `shmk_dt_record` [ RunTime:0.0405s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION shmk.array does not exist
+
+[ 2018-12-23T10:53:27+08:00 ] ::1 /shmk/admin.php/Log/dt_datareport
+SQL: SHOW COLUMNS FROM `shmk_dt_record` [ RunTime:0.0376s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'date("Y") ) GROUP BY month' at line 1
+
+[ 2018-12-23T10:53:37+08:00 ] ::1 /shmk/admin.php/Log/dt_datareport
+SQL: SHOW COLUMNS FROM `shmk_dt_record` [ RunTime:0.0369s ]
+SQL: SELECT count(a.id) as times FROM shmk_dt_record as a RIGHT JOIN shmk_month as b ON MONTH(a.out_station_time) = b.month  WHERE ( YEAR(a.out_station_time) = date("Y") ) GROUP BY month  [ RunTime:0.0014s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 148 行.
+NOTIC: [8] Undefined variable: data F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 154 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 154 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083065s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002393s ]
+
+[ 2018-12-23T10:54:44+08:00 ] ::1 /shmk/admin.php/Log/dt_datareport
+SQL: SHOW COLUMNS FROM `shmk_dt_record` [ RunTime:0.0333s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'YEAR(a.out_station_time) = date("Y") ) GROUP BY month' at line 1
+
+[ 2018-12-23T10:55:30+08:00 ] ::1 /shmk/admin.php/Log/dt_datareport
+SQL: SHOW COLUMNS FROM `shmk_dt_record` [ RunTime:0.0435s ]
+SQL: SELECT count(a.id) as times FROM shmk_dt_record as a RIGHT JOIN shmk_month as b ON MONTH(a.out_station_time) = b.month  WHERE ( YEAR(a.out_station_time) = 2018 ) GROUP BY month  [ RunTime:0.0013s ]
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076324s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001588s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001669s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002738s ]
+
+[ 2018-12-23T10:57:07+08:00 ] ::1 /shmk/admin.php/Log/dt_datareport
+SQL: SHOW COLUMNS FROM `shmk_dt_record` [ RunTime:0.0307s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'int)date("Y") ) GROUP BY month' at line 1
+
+[ 2018-12-23T10:57:51+08:00 ] ::1 /shmk/admin.php/Log/dt_datareport
+SQL: SHOW COLUMNS FROM `shmk_dt_record` [ RunTime:0.0282s ]
+SQL: SELECT count(a.id) as times FROM shmk_dt_record as a RIGHT JOIN shmk_month as b ON MONTH(a.out_station_time) = b.month  WHERE ( YEAR(a.out_station_time) = date("Y") ) GROUP BY month  [ RunTime:0.0013s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 148 行.
+NOTIC: [8] Undefined variable: data F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 154 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 154 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077764s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001570s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002996s ]
+
+[ 2018-12-23T10:59:09+08:00 ] ::1 /shmk/admin.php/Log/dt_datareport
+SQL: SHOW COLUMNS FROM `shmk_dt_record` [ RunTime:0.0289s ]
+SQL: SELECT count(a.id) as times FROM shmk_dt_record as a RIGHT JOIN shmk_month as b ON MONTH(a.out_station_time) = b.month  WHERE ( YEAR(a.out_station_time) = date("Y") ) GROUP BY month  [ RunTime:0.0012s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 148 行.
+NOTIC: [8] Undefined variable: data F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 154 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 154 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001547s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002438s ]
+
+[ 2018-12-23T10:59:48+08:00 ] ::1 /shmk/admin.php/Log/dt_datareport
+SQL: SHOW COLUMNS FROM `shmk_dt_record` [ RunTime:0.0288s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'YEAR(a.out_station_time)' in 'where clause'
+
+[ 2018-12-23T11:00:27+08:00 ] ::1 /shmk/admin.php/Log/dt_datareport
+SQL: SHOW COLUMNS FROM `shmk_dt_record` [ RunTime:0.0297s ]
+SQL: SELECT count(a.id) as times FROM shmk_dt_record as a RIGHT JOIN shmk_month as b ON MONTH(a.out_station_time) = b.month  WHERE ( YEAR(a.out_station_time) = date("Y") ) GROUP BY month  [ RunTime:0.0012s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 148 行.
+NOTIC: [8] Undefined variable: data F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 154 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 154 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072713s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072785s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001536s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001588s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002618s ]
+
+[ 2018-12-23T11:02:27+08:00 ] ::1 /shmk/admin.php/Log/dt_datareport
+SQL: SHOW COLUMNS FROM `shmk_dt_record` [ RunTime:0.0275s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION shmk.intval does not exist
+
+[ 2018-12-23T11:03:24+08:00 ] ::1 /shmk/
+SQL: SHOW COLUMNS FROM `shmk_auth_group` [ RunTime:0.0322s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shmk_auth_group` WHERE `module` = 'admin' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`module`,`type`,`title`,`description`,`status`,`rules` FROM `shmk_auth_group` WHERE `module` = 'admin' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.187921s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.188021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002421s ]
+
+[ 2018-12-23T11:03:24+08:00 ] ::1 /shmk/
+SQL: SHOW COLUMNS FROM `shmk_auth_group` [ RunTime:0.0218s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shmk_auth_group` WHERE `module` = 'admin' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`module`,`type`,`title`,`description`,`status`,`rules` FROM `shmk_auth_group` WHERE `module` = 'admin' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125247s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001604s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003185s ]
+
+[ 2018-12-23T11:03:41+08:00 ] ::1 /shmk/index.php?s=/Admin/Member/index.html
+NOTIC: [8] Undefined variable: map F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\MemberController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0247s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shmk_user a WHERE a.shmk_id > 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `shmk_user` [ RunTime:0.0191s ]
+SQL: SELECT a.*,a.avatar as savatar,a.name as sname FROM shmk_user a WHERE a.shmk_id > 0 ORDER BY a.shmk_id desc LIMIT 0,10   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001462s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001507s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002498s ]
+
+[ 2018-12-23T11:03:42+08:00 ] ::1 /shmk/index.php?s=/Admin/Log/cashflow.html
+SQL: SHOW COLUMNS FROM `shmk_cashflow` [ RunTime:0.0270s ]
+NOTIC: [8] Undefined variable: map F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 62 行.
+NOTIC: [8] Undefined index: where F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\AdminController.class.php 第 426 行.
+SQL: SELECT COUNT(*) AS tp_count FROM shmk_cashflow as a LEFT JOIN shmk_user as b ON a.account_id = b.shmk_id  LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT a.*,name as account_name,`charge`,`type`,`time`,`info` FROM shmk_cashflow as a LEFT JOIN shmk_user as b ON a.account_id = b.shmk_id  ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001794s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001872s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003622s ]
+
+[ 2018-12-23T11:03:44+08:00 ] ::1 /shmk/index.php?s=/Admin/Log/drivingrecord.html
+SQL: SHOW COLUMNS FROM `shmk_dt_record` [ RunTime:0.0279s ]
+NOTIC: [8] Undefined variable: map F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 130 行.
+NOTIC: [8] Undefined index: where F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\AdminController.class.php 第 426 行.
+SQL: SELECT COUNT(*) AS tp_count FROM shmk_dt_record as a LEFT JOIN shmk_user as b ON a.account_id = b.shmk_id LEFT JOIN shmk_cashflow as c ON a.out_station_time = c.time and a.account_id=c.account_id  LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT a.*,a.account_id,b.name as account_name,b.tel,`in_station`,`out_station`,`in_station_time`,`out_station_time`,c.paytype,`check`,c.money FROM shmk_dt_record as a LEFT JOIN shmk_user as b ON a.account_id = b.shmk_id LEFT JOIN shmk_cashflow as c ON a.out_station_time = c.time and a.account_id=c.account_id  ORDER BY `out_station_time` desc LIMIT 0,10   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001796s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002694s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002788s ]
+
+[ 2018-12-23T11:03:46+08:00 ] ::1 /shmk/admin.php/Log/dt_datareport
+SQL: SHOW COLUMNS FROM `shmk_dt_record` [ RunTime:0.0305s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\phpstudy\WWW\shmk\ThinkPHP\Library\Think\Db\Driver.class.php 第 480 行.
+SQL: SELECT count(a.id) as times FROM shmk_dt_record as a RIGHT JOIN shmk_month as b ON MONTH(a.out_station_time) = b.month  GROUP BY month  [ RunTime:0.0014s ]
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074209s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001697s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001752s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002475s ]
+
+[ 2018-12-23T11:04:47+08:00 ] ::1 /shmk/admin.php?s=/Log/cashflow.html
+SQL: SHOW COLUMNS FROM `shmk_cashflow` [ RunTime:0.0248s ]
+NOTIC: [8] Undefined variable: map F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 62 行.
+NOTIC: [8] Undefined index: where F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\AdminController.class.php 第 426 行.
+SQL: SELECT COUNT(*) AS tp_count FROM shmk_cashflow as a LEFT JOIN shmk_user as b ON a.account_id = b.shmk_id  LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT a.*,name as account_name,`charge`,`type`,`time`,`info` FROM shmk_cashflow as a LEFT JOIN shmk_user as b ON a.account_id = b.shmk_id  ORDER BY `time` desc LIMIT 0,10   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105227s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001555s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002210s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002275s ]
+
+[ 2018-12-23T11:04:49+08:00 ] ::1 /shmk/admin.php/Log/pay_datareport
+SQL: SHOW COLUMNS FROM `shmk_cashflow` [ RunTime:0.0269s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\phpstudy\WWW\shmk\ThinkPHP\Library\Think\Db\Driver.class.php 第 480 行.
+SQL: SELECT count(a1.id) as times FROM shmk_cashflow as a1 RIGHT JOIN shmk_month as b1 ON MONTH(a1.time) = b1.month LEFT JOIN shmk_dt_record as c1 ON a1.time=c1.out_station_time and a1.account_id=c1.account_id  GROUP BY b1.month  [ RunTime:0.0016s ]
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+SQL: SHOW COLUMNS FROM `shmk_cashflow` [ RunTime:0.0235s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\phpstudy\WWW\shmk\ThinkPHP\Library\Think\Db\Driver.class.php 第 480 行.
+SQL: SELECT count(a2.id) as times FROM shmk_cashflow as a2 RIGHT JOIN shmk_month as b2 ON MONTH(a2.time) = b2.month LEFT JOIN shmk_dt_record as c2 ON a2.time=c2.out_station_time and a2.account_id=c2.account_id  GROUP BY b2.month  [ RunTime:0.0014s ]
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001443s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001487s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002228s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002303s ]
+
+[ 2018-12-23T11:05:07+08:00 ] ::1 /shmk/admin.php/Log/pay_datareport
+SQL: SHOW COLUMNS FROM `shmk_cashflow` [ RunTime:0.0274s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\phpstudy\WWW\shmk\ThinkPHP\Library\Think\Db\Driver.class.php 第 480 行.
+SQL: SELECT count(a1.id) as times FROM shmk_cashflow as a1 RIGHT JOIN shmk_month as b1 ON MONTH(a1.time) = b1.month LEFT JOIN shmk_dt_record as c1 ON a1.time=c1.out_station_time and a1.account_id=c1.account_id  GROUP BY b1.month  [ RunTime:0.0020s ]
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+SQL: SHOW COLUMNS FROM `shmk_cashflow` [ RunTime:0.0285s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\phpstudy\WWW\shmk\ThinkPHP\Library\Think\Db\Driver.class.php 第 480 行.
+SQL: SELECT count(a2.id) as times FROM shmk_cashflow as a2 RIGHT JOIN shmk_month as b2 ON MONTH(a2.time) = b2.month LEFT JOIN shmk_dt_record as c2 ON a2.time=c2.out_station_time and a2.account_id=c2.account_id  GROUP BY b2.month  [ RunTime:0.0018s ]
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000320s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.112376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.112527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001784s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001855s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002799s ]
+
+[ 2018-12-23T11:09:31+08:00 ] ::1 /shmk/admin.php/Log/pay_datareport
+SQL: SHOW COLUMNS FROM `shmk_cashflow` [ RunTime:0.0233s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\phpstudy\WWW\shmk\ThinkPHP\Library\Think\Db\Driver.class.php 第 480 行.
+SQL: SELECT count(a1.id) as times FROM shmk_cashflow as a1 RIGHT JOIN shmk_month as b1 ON MONTH(a1.time) = b1.month LEFT JOIN shmk_dt_record as c1 ON a1.time=c1.out_station_time and a1.account_id=c1.account_id  GROUP BY b1.month  [ RunTime:0.0015s ]
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 175 行.
+SQL: SHOW COLUMNS FROM `shmk_cashflow` [ RunTime:0.0173s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\phpstudy\WWW\shmk\ThinkPHP\Library\Think\Db\Driver.class.php 第 480 行.
+SQL: SELECT count(a2.id) as times FROM shmk_cashflow as a2 RIGHT JOIN shmk_month as b2 ON MONTH(a2.time) = b2.month LEFT JOIN shmk_dt_record as c2 ON a2.time=c2.out_station_time and a2.account_id=c2.account_id  GROUP BY b2.month  [ RunTime:0.0012s ]
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 187 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078061s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001512s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002490s ]
+
+[ 2018-12-23T11:09:34+08:00 ] ::1 /shmk/admin.php?s=/Log/drivingrecord.html
+SQL: SHOW COLUMNS FROM `shmk_dt_record` [ RunTime:0.0290s ]
+NOTIC: [8] Undefined variable: map F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 130 行.
+NOTIC: [8] Undefined index: where F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\AdminController.class.php 第 426 行.
+SQL: SELECT COUNT(*) AS tp_count FROM shmk_dt_record as a LEFT JOIN shmk_user as b ON a.account_id = b.shmk_id LEFT JOIN shmk_cashflow as c ON a.out_station_time = c.time and a.account_id=c.account_id  LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT a.*,a.account_id,b.name as account_name,b.tel,`in_station`,`out_station`,`in_station_time`,`out_station_time`,c.paytype,`check`,c.money FROM shmk_dt_record as a LEFT JOIN shmk_user as b ON a.account_id = b.shmk_id LEFT JOIN shmk_cashflow as c ON a.out_station_time = c.time and a.account_id=c.account_id  ORDER BY `out_station_time` desc LIMIT 0,10   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091051s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091126s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002148s ]
+
+[ 2018-12-23T11:09:37+08:00 ] ::1 /shmk/admin.php/Log/dt_datareport
+SQL: SHOW COLUMNS FROM `shmk_dt_record` [ RunTime:0.0345s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\phpstudy\WWW\shmk\ThinkPHP\Library\Think\Db\Driver.class.php 第 480 行.
+SQL: SELECT count(a.id) as times FROM shmk_dt_record as a RIGHT JOIN shmk_month as b ON MONTH(a.out_station_time) = b.month  GROUP BY month  [ RunTime:0.0014s ]
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080827s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001756s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001814s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003792s ]
+
+[ 2018-12-23T11:10:19+08:00 ] ::1 /shmk/admin.php/Log/dt_datareport
+SQL: SHOW COLUMNS FROM `shmk_dt_record` [ RunTime:0.0318s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\phpstudy\WWW\shmk\ThinkPHP\Library\Think\Db\Driver.class.php 第 480 行.
+SQL: SELECT count(a.id) as times FROM shmk_dt_record as a RIGHT JOIN shmk_month as b ON MONTH(a.out_station_time) = b.month  GROUP BY month  [ RunTime:0.0014s ]
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089695s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002447s ]
+
+[ 2018-12-23T11:10:36+08:00 ] ::1 /shmk/admin.php/Log/dt_datareport
+SQL: SHOW COLUMNS FROM `shmk_dt_record` [ RunTime:0.0275s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\phpstudy\WWW\shmk\ThinkPHP\Library\Think\Db\Driver.class.php 第 480 行.
+SQL: SELECT count(a.id) as times FROM shmk_dt_record as a RIGHT JOIN shmk_month as b ON MONTH(a.out_station_time) = b.month  GROUP BY month  [ RunTime:0.0014s ]
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001472s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003274s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003405s ]
+
+[ 2018-12-23T11:10:43+08:00 ] ::1 /shmk/admin.php/Log/dt_datareport
+SQL: SHOW COLUMNS FROM `shmk_dt_record` [ RunTime:0.0915s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\phpstudy\WWW\shmk\ThinkPHP\Library\Think\Db\Driver.class.php 第 480 行.
+SQL: SELECT count(a.id) as times FROM shmk_dt_record as a RIGHT JOIN shmk_month as b ON MONTH(a.out_station_time) = b.month  GROUP BY month  [ RunTime:0.0029s ]
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000375s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000544s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.098665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098784s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002755s ]
+
+[ 2018-12-23T11:11:07+08:00 ] ::1 /shmk/admin.php/Log/dt_datareport
+SQL: SHOW COLUMNS FROM `shmk_dt_record` [ RunTime:0.0439s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\phpstudy\WWW\shmk\ThinkPHP\Library\Think\Db\Driver.class.php 第 480 行.
+SQL: SELECT count(a.id) as times FROM shmk_dt_record as a RIGHT JOIN shmk_month as b ON MONTH(a.out_station_time) = b.month  GROUP BY month  [ RunTime:0.0012s ]
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073568s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073637s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002943s ]
+
+[ 2018-12-23T11:14:06+08:00 ] ::1 /shmk/admin.php/Log/dt_datareport
+SQL: SHOW COLUMNS FROM `shmk_dt_record` [ RunTime:0.0295s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\phpstudy\WWW\shmk\ThinkPHP\Library\Think\Db\Driver.class.php 第 480 行.
+SQL: SELECT count(a.id) as times FROM shmk_dt_record as a RIGHT JOIN shmk_month as b ON MONTH(a.out_station_time) = b.month  GROUP BY month  [ RunTime:0.0016s ]
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+NOTIC: [8] Use of undefined constant times - assumed 'times' F:\phpstudy\phpstudy\WWW\shmk\Application\Admin\Controller\LogController.class.php 第 150 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080093s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001519s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002182s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002266s ]
+
